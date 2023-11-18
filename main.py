@@ -9,10 +9,6 @@ import requests
 def extract_clean_string(string:str):
     return string.replace('\u00a0', '').replace('\u00e9', '').strip()
 
-from bs4 import BeautifulSoup
-
-from bs4 import BeautifulSoup
-
 def parse_product(product_html):
     product_info = {}
     soup = BeautifulSoup(product_html, 'html.parser')
